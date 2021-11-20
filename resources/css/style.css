@@ -1,3 +1,5 @@
-body {
-    background-color: red;
+/* Height for devices larger than 576px */
+
+.vh-30 {
+    height: 20vh;
 }
