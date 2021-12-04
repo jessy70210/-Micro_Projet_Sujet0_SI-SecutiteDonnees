@@ -1,28 +1,29 @@
 <div class="container h-100 d-flex flex-column justify-content-around">
     <div class="row m-5">
         <div class="col-6 offset-3 ">
-            <h1 class="text-white font-pacifico text-center">Restaurant</h1>
-            <h3 class="text-white-50 font-pacifico text-center">à la bonne heure</h3>
+<!--            <h1 class="text-white font-pacifico text-center">Restaurant</h1>-->
+            <h3 class="text-white font-pacifico text-center">A la bonne heure</h3>
+            <div class="text-center"><img height="100" width="auto" src="../../resources/img/logo.png" alt="Logo Restaurant"></div>
         </div>
     </div>
-    <div class="row m-5">
-        <p class="text-white text-center fs-1">Bienvenu sur notre application<br>Grâce à notre service de menu diginal vous pouvez consulté, commandé le menu et surtout profité.<br><br>Il est l'heure de passer à table</p>
+    <div class="row m-4">
+        <p class="text-white text-center fs-1">Bienvenu sur notre application<br>Grâce à notre service de menu diginal vous pouvez consulté, commandé le menu et surtout profité. Il est l'heure de passer à table</p>
     </div>
-    <div class="row- fixed-bottom m-5">
-        <div class="col-4 text-center">
-            <button type="button" class="btn btn-outline-light">
-                Passer commande une
-            </button>
+    <div class="fixed-bottom m-5">
+        <div class="text-center row m-1">
+            <a href="#" class="btn btn-outline-light">
+                Passer une commande
+            </a>
         </div>
-        <div class="col-4 text-center">
-            <button type="button" class="btn btn-outline-light">
+        <div class="text-center row m-1">
+            <a href="#" class="btn btn-outline-light">
                 Voir le menu
-            </button>
+            </a>
         </div>
-        <div class="col-4 text-center">
-            <button type="button" class="btn btn-outline-light">
+        <div class="text-center row m-1">
+            <a href="http://www.google.fr" class="btn btn-outline-light">
                 Rejoindre une commande
-            </button>
+            </a>
         </div>
     </div>
 </div>
