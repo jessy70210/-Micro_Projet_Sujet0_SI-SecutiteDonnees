@@ -160,7 +160,7 @@ class Plat
         $obj1=new Plat;
         $obj->setId(1);
         $obj->setPricePlat(20);
-        $obj->setImagePlat('../../resources/assets/logo/2.jpg');
+        $obj->setImagePlat('../../resources/assets/img/2.jpg');
         $obj->setLibelleplat('Crepes with Oranges and Honey');
         $obj->setDetailsPlat('20min');
         $obj->setQtePlat(0);
@@ -168,7 +168,7 @@ class Plat
         $obj->setTypePlat('salad');
         $obj1->setId(2);
         $obj1->setPricePlat(20);
-        $obj1->setImagePlat('../../resources/assets/logo/2.jpg');
+        $obj1->setImagePlat('../../resources/assets/img/2.jpg');
         $obj1->setLibelleplat('Cake citron');
         $obj1->setDetailsPlat('20min');
         $obj1->setQtePlat(0);

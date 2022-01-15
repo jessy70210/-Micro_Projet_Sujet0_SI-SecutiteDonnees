@@ -3,8 +3,9 @@ require ($_SERVER['DOCUMENT_ROOT'].'/model/Plat.php');
 
 class controllerPlatDetails{
 
-    public function platChoisi($id)
+    public static function readAll()
     {
+        $id=$_GET['id'];
         $qte = $_GET['qte'];
         $plat = new Plat();
         $plats = $plat->listPlats();

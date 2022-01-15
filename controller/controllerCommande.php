@@ -1,9 +1,9 @@
 <?php
 require ($_SERVER['DOCUMENT_ROOT'].'/model/Plat.php');
-session_start();
+
 class controllerCommande{
 
-    public function ajouterPlat(){
+    public static function readAll(){
 
         if(isset($_POST['id'])){
             $platModel=new Plat();
@@ -16,11 +16,13 @@ class controllerCommande{
                 'imagePlat'=>$plat->getImagePlat()
             );
 
+            header('Location:?controller=PlatDetails&id='.$_POST['id'].'&qte='.$_POST['qty']);
+        }else{
+            require(File::build_path(array("view/accueil", "Commande.php")));
         }
-       //require($_SERVER['DOCUMENT_ROOT'].'/controller/routeur.php?controller=controllerPlatDetails&action=platChoisi&id='.$_POST['id'].'&qte=0');
-        header('Location:routeur.php?controller=controllerPlatDetails&action=platChoisi&id='.$_POST['id'].'&qte='.$_POST['qty']);
+
+
+
     }
-    public function afficherCommande(){
-           require ($_SERVER['DOCUMENT_ROOT'].'/view/accueil/Commande.php');
-    }
+
 }
