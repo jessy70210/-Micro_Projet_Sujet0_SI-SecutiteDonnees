@@ -69,10 +69,10 @@ nav img{
 }
 .add-menu{
     text-align: left;
-    color: #f6c054;
+    color: #fcba03;
 }
 .nav-item span{
-    color: #f6c054;
+    background-color: #fcba03;
     position: absolute;
     top:10px;
 
@@ -203,10 +203,10 @@ ul{
 }
 .btn-toolbar button{
     border-radius: 50px;
-    color: #f6c054 ;
+    color: #fcba03 ;
 }
 .dropdown-toggle{
-    color: #f6c054 !important;
+    color: #fcba03 !important;
 }
 .pagination{
     position: relative;
@@ -220,7 +220,7 @@ ul{
 
 }
 .pagination a{
-    color: #f6c054;
+    color: #fcba03;
 }
 
 

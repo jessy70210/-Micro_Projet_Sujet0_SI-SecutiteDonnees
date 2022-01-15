@@ -1,78 +1,26 @@
 <?php
-require_once(File::build_path(array("model", "modelTypes.php")));
-require_once(File::build_path(array("lib", "session.php")));
-
+require ($_SERVER['DOCUMENT_ROOT'].'/model/Plat.php');
+session_start();
 class controllerCommande{
-  /* Récupérer la liste des types */
-//  public static function readAll(){
-//    $pageTitle = "Tous les types";
-//    $tab_t = modelTypes::readAll();
-//    require (File::build_path(array("view", "navbar.php")));
-//    require	(File::build_path(array("view", "types", "tousLesTypes.php")));
-//    require (File::build_path(array("view", "footer.php")));
-//  }
 
-	public static function priseCommande(int $numCommande = null){
-		$pageTitle = "Commande";
-		//$tab_t = modelTypes::readAll();
-		require (File::build_path(array("view", "navbar.php")));
-		//require	(File::build_path(array("view", "types", "tousLesTypes.php")));
-		if (is_null($numCommande)) (File::build_path(array("view", "commande", "priseCommande.php")));
-		require (File::build_path(array("view", "footer.php")));
-	}
+    public function ajouterPlat(){
 
-  public static function add(){
-    $pageTitle = "...";
-    if(isset($_POST['type'])){
-      $nomType = htmlspecialchars($_POST['type']);
-      $ajoutType = new modelTypes($nomType);
-      $ajoutType->create();
-      require (File::build_path(array("view", "navbar.php")));
-      /* require	(File::build_path(array("view", "types", "nomDeLaVue.php"))); */
-      require (File::build_path(array("view", "footer.php")));
-    }
-    else{
-      controllerErreur::erreur("Problème dans la création du type");
-    }
-  }
+        if(isset($_POST['id'])){
+            $platModel=new Plat();
+            $plats=$platModel->listPlats();
+            $plat=$platModel->getPlatByID($_POST['id'],$plats);
+            $plat->setQtePlat($_POST['qty']);
+            $_SESSION['myData'][] = array(
+                'libelleplat'=> $plat->getLibellePlat(),
+                 'qtePlat' =>$plat->getQtePlat(),
+                'imagePlat'=>$plat->getImagePlat()
+            );
 
-  public static function update(){
-    $pageTitle = "...";
-    if(isset($_POST['type'])){
-      $nomType = htmlspecialchars($_POST['type']);
-      $modifieType = new modelTypes($nomType);
-      $modifieType->update();
-      require (File::build_path(array("view", "navbar.php")));
-      /* require	(File::build_path(array("view", "types", "nomDeLaVue.php"))); */
-      require (File::build_path(array("view", "footer.php")));
+        }
+       //require($_SERVER['DOCUMENT_ROOT'].'/controller/routeur.php?controller=controllerPlatDetails&action=platChoisi&id='.$_POST['id'].'&qte=0');
+        header('Location:routeur.php?controller=controllerPlatDetails&action=platChoisi&id='.$_POST['id'].'&qte='.$_POST['qty']);
     }
-    else{
-      controllerErreur::erreur("Problème dans la modification du type");
+    public function afficherCommande(){
+           require ($_SERVER['DOCUMENT_ROOT'].'/view/accueil/Commande.php');
     }
-  }
-
-  public static function delete(){
-    $pageTitle = "...";
-    if(isset($_POST['type'])){
-      $nomType = htmlspecialchars($_POST['type']);
-      $supprimeType = new modelTypes($nomType);
-      $supprimeType->delete();
-      require (File::build_path(array("view", "navbar.php")));
-      /* require	(File::build_path(array("view", "types", "nomDeLaVue.php"))); */
-      require (File::build_path(array("view", "footer.php")));
-    }
-    else{
-      controllerErreur::erreur("Problème dans la suppression du type");
-    }
-  }
-
-  /* Action reservée pour un administrateur */
-  public static function something(){
-    if(session::is_admin()){
-      $pageTitle = "...";
-    }
-    else{
-      controllerErreur::erreur("Action non autorisée pour un client");
-    }
-  }
 }

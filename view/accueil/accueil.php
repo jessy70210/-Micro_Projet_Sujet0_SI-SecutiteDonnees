@@ -35,7 +35,8 @@
                 <p><br><br></p>
                 <img height="150" width="auto" src="../../resources/img/logo4.jpg" alt="Logo Restaurant">
                 <h2 class="font-pacifico"><br><br>Welcome dear customer</h2>
-                <h4 class="font-pacifico"><br> <?php echo $table; ?></h4>
+                <h4 class="font-pacifico"><br> <?php $table =1;
+                    echo $table; ?></h4>
             </div>
         </div>
     </div>

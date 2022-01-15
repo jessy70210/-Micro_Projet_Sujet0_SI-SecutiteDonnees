@@ -1,23 +1,24 @@
 <?php
-require_once(File::build_path(array("controller", "controllerErreur.php")));
+/*require_once(File::build_path(array("controller", "controllerErreur.php")));*/
+
 
 /* Contrôleur par défaut */
 $controller = 'controllerAccueil';
 $action = 'readAll';
 
 /* Chargement du contrôleur */
-if(!isset($_GET['controller']) && !isset($_GET['action'])){
+/*if(!isset($_GET['controller']) && !isset($_GET['action'])){
 	require(File::build_path(array("controller", "controllerAccueil.php")));
 	$controller::$action();
 }
-else{
-	if(isset($_GET['controller']) && !empty($_GET['controller'])){
+else{*/
+	/*if(isset($_GET['controller']) && !empty($_GET['controller'])){
 		$controller = 'controller'. ucfirst($_GET['controller']);
 
-		if(file_exists(File::build_path(array('controller', $controller . '.php')))){
+		//if(file_exists(File::build_path(array('controller', $controller . '.php')))){
 
 			if($controller!="controllerErreur"){
-				require(File::build_path(array('controller', $controller .  '.php')));
+				//require(File::build_path(array('controller', $controller .  '.php')));
 			}
 
 			if(class_exists($controller)){
@@ -35,11 +36,41 @@ else{
 				else{
 					controllerErreur::erreur("Action non existante");
 				}
-			}
-		}else{
+
+		/*}else{
 			controllerErreur::erreur("Le contrôleur n'existe pas");
-		}
-	}else{
+		}*/
+	/*}else{
 		controllerErreur::erreur("Le contrôleur n'a pas été défini ou champs vides");
-	}
+	}*/
+    if(isset($_GET['controller'])) {
+        switch ($_GET['controller']){
+            case 'controllerMenu':
+                require('controllerMenu.php');
+                $controllerMenu=new controllerMenu();
+                if(isset($_GET['action']) && $_GET['action']=='listPlatByType'){
+                    if(isset($_GET['type']))
+                        $controllerMenu->listPlatByType($_GET['type']);
+                }
+                break;
+            case 'controllerPlatDetails':
+                require('controllerPlatDetails.php');
+                $controllerPlatDetails=new controllerPlatDetails();
+                if(isset($_GET['action']) && $_GET['action']=='platChoisi'){
+                    if(isset($_GET['id']))
+                        $controllerPlatDetails->platChoisi($_GET['id']);
+                }
+                break;
+            case 'controllerCommande':
+                require('controllerCommande.php');
+                $controllerCommande=new controllerCommande();
+                if(isset($_GET['action']) && $_GET['action']=='afficherCommande'){
+                      $controllerCommande->afficherCommande();
+                }else{
+                      $controllerCommande->ajouterPlat();
+                }
+                break;
+    }
 }
+
+
