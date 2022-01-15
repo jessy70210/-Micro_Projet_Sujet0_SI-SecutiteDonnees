@@ -277,12 +277,15 @@
     }
     .checkout button{
         background-color: #ff241f;
-        font-size: 24px;
+        font-size: 64px;
         font-weight: bold;
-        border-radius: 10%;
+        border-radius: 50px;
         color:white;
         position: absolute;
-        bottom: 0px;
+        bottom: 28%;
+        left: 30%;
+        padding-left: 5%;
+        padding-right: 5%;
 
 
     }

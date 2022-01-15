@@ -496,6 +496,10 @@
     .box img{
         width: 200px;
     }
+    .plat img{
+        width: 425px;
+        height: 425px;
+    }
 
 
 
