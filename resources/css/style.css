@@ -24,16 +24,14 @@ p {
 /*body {
     background-image:
             linear-gradient( 45deg, rgba(11, 48, 108, 0.6), rgba(3, 5, 56, 0.6) 100%),
-            url("../../resources/img/fond.jpg");
+            url("../../resources/logo/fond.jpg");
     background-size: auto 100vh;
 }*/
 
 .font-pacifico {
     font-family: Pacifico;
 }
-body{
-    padding: 2rem 0rem;
-}
+
 nav{
     width: 547px;
     margin-left: 150px;
@@ -223,4 +221,17 @@ ul{
     color: #fcba03;
 }
 
+.bg-saumon {
+    background-color: #E85852FF;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+
+}
+body, html {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
 

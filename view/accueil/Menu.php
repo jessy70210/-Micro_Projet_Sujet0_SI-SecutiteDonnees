@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body >
 <style>
     :root {
         --surface-color: #fff;
@@ -539,12 +539,12 @@
             <div style="border-radius: 10%;background-color:white;border: 0px solid rgba(0,0,0,0);">
                 <li>
                     <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerPlatDetails&action=platChoisi&id='.$plat->getId().'&qte=&nb=0" class="card">
-                        <img src="'.$plat->getImagePlat().'" class="card__image" alt=""  />
+                        <logo src="'.$plat->getImagePlat().'" class="card__image" alt=""  />
                     </a>
                 </li>
                 <h2 style="text-align: center;color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold " >Poitrine de poulet grillée</h2>
                 <h1 style="text-align: center;"><span style="font-weight:bold;font-size:45px;font-family:Comic Sans MS, Comic Sans, cursive">852 </span><span style="font-size:35px ; color:rgba(232,88,82,100)">$ </span></h1>
-                <h1 style="text-align: center;color:#999999"><span> <img src="resources/../../resources/assets/img/time.png" style="width:10%;height:10%;"  /></span><span style="font-weight:bold;font-size:20px;padding-top:10%"> 30 min </span></h1>
+                <h1 style="text-align: center;color:#999999"><span> <logo src="resources/../../resources/assets/logo/time.png" style="width:10%;height:10%;"  /></span><span style="font-weight:bold;font-size:20px;padding-top:10%"> 30 min </span></h1>
         
             </div>';
     endforeach;
@@ -599,26 +599,26 @@
         switch(id){
             case 'salad':
                 property.style.backgroundColor = "#Fdef09";
-                propertyImg.src = "../../resources/assets/img/salad.png";
+                propertyImg.src = "../../resources/assets/logo/salad.png";
                 break;
 
             case 'main':
 
                 property.style.backgroundColor = "#Fdef09";
-                propertyImg.src = "../../resources/assets/img/steak.png";
+                propertyImg.src = "../../resources/assets/logo/steak.png";
                 break;
 
             case 'dessert':
                 property.style.backgroundColor = "#Fdef09";
-                propertyImg.src = "../../resources/assets/img/cake.png";
+                propertyImg.src = "../../resources/assets/logo/cake.png";
                 break;
             case 'drink':
                 property.style.backgroundColor = "#Fdef09";
-                propertyImg.src = "../../resources/assets/img/cocktail.png";
+                propertyImg.src = "../../resources/assets/logo/cocktail.png";
                 break;
             case 'sauce':
                 property.style.backgroundColor = "#Fdef09";
-                propertyImg.src = "../../resources/assets/img/sauces.png";
+                propertyImg.src = "../../resources/assets/logo/sauces.png";
                 break;
         }
     }
@@ -633,7 +633,7 @@
                 }
 
                 property.style.backgroundColor = "#f5faf6";
-                propertyImg.src = "../../resources/assets/img/saladColor.png";
+                propertyImg.src = "../../resources/assets/logo/saladColor.png";
                 break;
 
             case 'main':
@@ -642,7 +642,7 @@
                         deleteColor(i);
                 }
                 property.style.backgroundColor = "#f5faf6";
-                propertyImg.src = "../../resources/assets/img/steakColor.png";
+                propertyImg.src = "../../resources/assets/logo/steakColor.png";
 
                 break;
 
@@ -653,7 +653,7 @@
                         deleteColor(i);
                 }
                 property.style.backgroundColor = "#f5faf6";
-                propertyImg.src = "../../resources/assets/img/cakeColor.png";
+                propertyImg.src = "../../resources/assets/logo/cakeColor.png";
                 break;
             case 'drink':
                 for (let i = 1; i <=5; i++) {
@@ -661,7 +661,7 @@
                         deleteColor(i);
                 }
                 property.style.backgroundColor = "#f5faf6";
-                propertyImg.src = "../../resources/assets/img/cocktailColor.png";
+                propertyImg.src = "../../resources/assets/logo/cocktailColor.png";
                 break;
             case 'sauce':
                 for (let i = 1; i <=5; i++) {
@@ -669,7 +669,7 @@
                         deleteColor(i);
                 }
                 property.style.backgroundColor = "#f5faf6";
-                propertyImg.src = "../../resources/assets/img/sauceColor.png";
+                propertyImg.src = "../../resources/assets/logo/sauceColor.png";
                 break;
         }
 

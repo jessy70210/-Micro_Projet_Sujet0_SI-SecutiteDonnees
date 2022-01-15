@@ -83,7 +83,7 @@
 <!--        </div>-->
         <!-- Background image -->
     </header>
-    <main>
+    <main class="bg-saumon">
 
 
 
