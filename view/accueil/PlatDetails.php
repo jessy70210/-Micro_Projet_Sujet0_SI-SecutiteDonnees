@@ -21,12 +21,14 @@
         max-width: 100%;
         overflow-x: hidden;
         height: 100%;
+
     }
 
     .card{
-        background-color: #f5faf6;
+
         margin:20px;
         border-radius: 50px;
+
     }
     .img-container{
 
@@ -41,17 +43,15 @@
         height:100%;
         border-top-left-radius: 50px 50px;
         border-top-right-radius: 50px 50px;
+        background-color: #f0bf3c;z-index: 50;
 
     }
     .card-body{
-        background-color: white;
+        background-color: #f8f4f4;
         position: absolute;
         top:90%;
         width: 100%;
         border-radius: 60px ;
-
-
-
     }
 
     .box{
@@ -65,7 +65,7 @@
         text-align: center;
         border-radius: 20px;
         padding-top: 5%;
-        box-shadow: 5px 5px 5px  #EFEDEC;
+        box-shadow: 5px 5px 5px  darkgray;
     }
     input{
         border: 0;
@@ -80,14 +80,15 @@
         position:absolute;
         top:-5%;
         left:40%;
-        background-color: #fcf803;
+        background-color:  #ff0921;
         border-radius: 50px;
-        box-shadow: 10px 5px 5px  #EFEDEC;
+        box-shadow: 10px 5px 5px darkgray;
         width: 200px;
+
     }
     .qty .count {
         color: #000;
-        background-color: #fcf803;
+        background-color:  #ff0921;
         display: inline-block;
         align-items: center;
         font-size: 50px;
@@ -145,12 +146,13 @@
         vertical-align: top;
         display: inline-block;
         text-align: center;
-        background-color: #fcf803;
+        background-color:  #ff0921;
         height: 150px;
         width: 70px;
         padding-top: 2%;
         margin-left: 2%;
         border-radius: 50px;
+        box-shadow: 10px 10px 10px darkgray;
     }
     .card-body-icon img{
         background-color: white;
@@ -179,7 +181,7 @@
         display: block;
         font-family: cursive;
         font-size: 30px;
-        color: #d2d3d4;
+        color: grey;
 
     }
     .cart-body-ingredients{
@@ -194,7 +196,7 @@
     .ingredients-list li::before {
         font-family: 'FontAwesome';
         content: '\2022 ';
-        color: #fcf803;
+        color:  #ff0921;
         display: inline-block;
         width: 1em;
         margin-left: -1em;
@@ -203,10 +205,10 @@
         margin-left: 25px;
     }
     .ingredient-qte{
-        color:#d2d3d4;
+        color:grey;
     }
     .add-dish{
-        background-color: #fcf803 !important;
+        background-color: #ff3842 !important;
         cursor: pointer;
         display: inline-block;
         align-items: center;
@@ -217,10 +219,10 @@
         text-align: center;
         border-radius: 50%;
         color: black;
-        box-shadow: 0 0 15px rgba(0,0,0,0.6);
-        -moz-box-shadow: 0 0 15px rgba(0,0,0,0.6);
-        -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.6);
-        -o-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+        box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        -o-box-shadow: 0 0 20px rgba(0,0,0,0.6);
     }
     .add-container{
         position: relative;
@@ -244,8 +246,8 @@
         width: 104.5%;
         right:20px;
         border-radius: 60px;
-        background-color: white;
-        box-shadow: 0px 10px 5px #EFEDEC, 0px -10px 5px #EFEDEC;
+        background-color: #f8f4f4;
+        box-shadow: 0px 0px 0px darkgray, 0px -5px 5px darkgray;
 
 
     }
@@ -256,7 +258,7 @@
 
     }
     .box span{
-        background-color: #fcf803;
+        background-color:  #ff0921;
         position: absolute;
         top:0px;
         font-size: 25px;
@@ -265,7 +267,7 @@
 
     }
     .header-price span{
-        color: #fcf803 ;
+        color: #ff3842 ;
     }
     a{
         color: black;
@@ -275,10 +277,11 @@
 
 
 
+
 </style>
 <form method="post" action="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerCommande&action=ajouterPlat">
     <input type="hidden"  name="id" size="12" maxlength="12" value="<?php echo $id; ?>">
-    <div class="card"  >
+    <div class="card" style="" >
         <div class="img-container">
             <div class="col-md-12 container d-flex justify-content-between img-text">
                 <div class="col-md-2 " >
@@ -304,7 +307,7 @@
             <div class="card-body-header d-flex justify-content-between ">
                 <div class="header-title">
                     <h1 style="width:90%"><b><?php echo $platChoisi->getLibelleplat(); ?></b></h1>
-                    <h4 style="color:#d2d3d4;"><b>Dessert</b></h4>
+                    <h4 style="color:grey;"><b>Dessert</b></h4>
                 </div>
                 <div class="header-price">
                     <h1><b>6.99<span>$</span></b></h1>
@@ -337,7 +340,7 @@
                 </p>
             </div>
             <div class="cart-body-ingredients">
-                <h1><b>Ingredients</b> <img src="img/liste-dingredients.png"></h1>
+                <h1><b>Ingredients</b></h1>
                 <ul class="ingredients-list">
                     <li>2 <span class="ingredient-qte">eggs</span></li>
                     <li>1/2 <span class="ingredient-qte">cup flour</span></li>

@@ -27,7 +27,7 @@
 
     body {
         font-family: 'Noto Sans JP', sans-serif;
-        background-color: #fcfcfc;
+        background-color: whitesmoke;
 
     }
 
@@ -363,6 +363,7 @@
         text-align: center;
         border-radius: 60px;
         margin-left:20px;
+        box-shadow: 5px 5px 5px darkgray;
 
 
     }
@@ -447,21 +448,60 @@
         text-align: justify;
         margin-left: 14.5%;
     }
+    .box1{
+        margin-top: 30%;
+        background-color:white;
+        cursor: pointer;
+        display: inline-block;
+        height: 40%;
+        width: 55%;
+        align-items: center;
+        text-align: center;
+        border-radius: 20px;
+        padding-top: 5%;
+
+        box-shadow: 5px 5px 5px  darkgray;
+    }
+    a{
+        color:black;
+    }
+    .img-text{
+
+    }
+    .cart-icon{
+        margin-left: 10%;
+    }
+    .plat{
+        border-radius: 10%;
+        background-color:white;
+        border: 0px solid rgba(0,0,0,0);
+        box-shadow: 5px 5px 5px  darkgray;
+
+    }
+    .plat:hover{
+        box-shadow: 10px 10px 10px  darkgray;
+    }
+    .box img{
+        width: 200px;
+    }
+
 
 
 </style>
-<img src="./resources/../../resources/assets/img/panier2.png" style="width:10%;height:10%;align:right;position: relative;
-  float: right;margin-right:10%;margin-top:4%"  />
-<div class="col-sm-4">
-    <div class="item">
-        <a href="#">
-            <span class="" ><img src="../../resources/assets/img/restaurant.png"></span>
+<div class="col-md-12 container d-flex justify-content-between img-text">
+    <div class="col-md-2 " >
+        <div class="box">
+            <img src="../../resources/assets/img/logo.png">
 
-        </a>
+        </div>
     </div>
-
+    <div class="col-md-2">
+        <div class="box1 cart-icon">
+            <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerCommande&action=afficherCommande"><i class="fas fa-shopping-bag fa-3x"></i></a>
+            <span class="translate-middle badge rounded-pill " id="qte"></span>
+        </div>
+    </div>
 </div>
-
 <div class="navbar-collapse collapse " id="collapsingNavbar">
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -536,7 +576,7 @@
     <?php
     foreach ($platsFiltres as $plat):
         echo '
-            <div style="border-radius: 10%;background-color:white;border: 0px solid rgba(0,0,0,0);">
+            <div class="plat">
                 <li>
                     <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerPlatDetails&action=platChoisi&id='.$plat->getId().'&qte=&nb=0" class="card">
                         <logo src="'.$plat->getImagePlat().'" class="card__image" alt=""  />
@@ -632,7 +672,7 @@
                         deleteColor(i);
                 }
 
-                property.style.backgroundColor = "#f5faf6";
+                property.style.backgroundColor = "white";
                 propertyImg.src = "../../resources/assets/logo/saladColor.png";
                 break;
 
@@ -641,7 +681,7 @@
                     if(i!=2)
                         deleteColor(i);
                 }
-                property.style.backgroundColor = "#f5faf6";
+                property.style.backgroundColor = "white";
                 propertyImg.src = "../../resources/assets/logo/steakColor.png";
 
                 break;
@@ -652,7 +692,7 @@
                     if(i!=3)
                         deleteColor(i);
                 }
-                property.style.backgroundColor = "#f5faf6";
+                property.style.backgroundColor = "white";
                 propertyImg.src = "../../resources/assets/logo/cakeColor.png";
                 break;
             case 'drink':
@@ -660,7 +700,7 @@
                     if(i!=4)
                         deleteColor(i);
                 }
-                property.style.backgroundColor = "#f5faf6";
+                property.style.backgroundColor = "white";
                 propertyImg.src = "../../resources/assets/logo/cocktailColor.png";
                 break;
             case 'sauce':
@@ -668,7 +708,7 @@
                     if(i!=5)
                         deleteColor(i);
                 }
-                property.style.backgroundColor = "#f5faf6";
+                property.style.backgroundColor = "white";
                 propertyImg.src = "../../resources/assets/logo/sauceColor.png";
                 break;
         }

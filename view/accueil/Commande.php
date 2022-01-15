@@ -270,21 +270,25 @@
     .command-footer span{
 
     }
+    button{
+
+    }
 
 
 </style>
 
+
+
 <body>
 <div class="col-md-12  d-flex justify-content-between header-icon">
-    <div class="col-md-2 " >
+
         <div class="box">
-            <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerMenu&action=listPlatByType&type=salad"><i class="fas fa-chevron-left fa-4x"></i></a>
+           <div class="col-md-2 " ><img src="../../resources/assets/img/logo.png" style="width: 200px;"></div>
         </div>
     </div>
     <div class="col-md-2">
         <div class="box">
-            <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerCommande&action=afficherCommande"><img src="../../resources/assets/img/restaurant.png"><br/><p >Table 1</p></a>
-
+            <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerCommande&action=afficherCommande"><i class="fas fa-chevron-left fa-4x"></i></a>
         </div>
     </div>
 </div>
@@ -378,20 +382,8 @@
     </div>-->
 
 </ul>
-<div class="command-footer">
 
-        <div style="text-align: justify;">
-
-            <p style="color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold ;font-size:40px;" >Items  : <span style="float:right;"> 7 </span> </p>
-            <div class="card"  ></div>
-            <p style="color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold ;font-size:40px;" > Time  : <span style="float:right;"> 30 min </span> </p>
-            <div class="card"  ></div>
-            <p style="color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold ;font-size:45px;" > Total price  : <span style="float:right;"> 152 </span><span style="font-size:35px ; color:#f0bf3c">$ </span> </p>
-            <div class="card"  ></div>
-
-        </div>
-    <button class="button" style=" margin-left:20%;">Direct </button><button class="button" style=" margin-left:20%;">on line </button>
-</div>
+    <button class="button" style=" margin-left:20%;"> Checkout </button>
 
 </body>
 </html>
