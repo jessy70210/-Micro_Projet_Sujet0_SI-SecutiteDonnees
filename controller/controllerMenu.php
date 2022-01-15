@@ -6,8 +6,8 @@ class controllerMenu{
 
 	public static function readAll(){
 
-		$type = isset($_GET['type']) ? isset($_GET['type']) : 'salad';
-
+		$type = isset($_GET['type']) ? $_GET['type'] : 'salad';
+		error_log('type : '.$type);
 		$plat = new Plat();
 		$plats = $plat->listPlats();
 		$platsFiltres=$plat->getPlatByType($type,$plats);

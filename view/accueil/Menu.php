@@ -537,26 +537,26 @@
 
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
     <div  role="group" aria-label="first group">
-        <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerMenu&action=listPlatByType&type=salad" class="btn-group" id="saladdiv" onclick="setColor('salad');">
-            <img id="saladimg" src="../../resources/assets/img/salad.png" alt="..."  >
+        <a href="?controller=Menu&type=salad" class="btn-group" id="saladdiv" onclick="setColor('salad');">
+            <img id="saladimg" src="/resources/assets/img/salad.png" alt="..."  >
         </a>
         <h1 class="title">Starters</h1>
     </div>
     <div  role="group" aria-label="Second group" >
-        <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerMenu&action=listPlatByType&type=main" class="btn-group" id="maindiv" onclick="setColor('main');">
+        <a href="?controller=Menu&type=main" class="btn-group" id="maindiv" onclick="setColor('main');">
             <img id="mainimg"  src="../../resources/assets/img/steak.png" alt="..." >
         </a>
         <div class="title"style="text-align:center" >Main<br/>Courses</div>
     </div>
     <div role="group" aria-label="Third group" >
 
-        <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerMenu&action=listPlatByType&type=dessert" class="btn-group" id="dessertdiv" onclick="setColor('dessert');">
+        <a href="?controller=Menu&type=dessert" class="btn-group" id="dessertdiv" onclick="setColor('dessert');">
             <img  id="dessertimg" src="../../resources/assets/img/cake.png" alt="..." />
         </a>
         <div class="title">Desserts</div>
     </div>
     <div  role="group" aria-label="fourth group" >
-        <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerMenu&action=listPlatByType&type=drink" class="btn-group" id="drinkdiv"  onclick="setColor('drink');">
+        <a href="?controller=Menu&type=drink" class="btn-group" id="drinkdiv"  onclick="setColor('drink');">
             <img  id="drinkimg" src="../../resources/assets/img/cocktail.png" alt="..." />
         </a>
         <div class="title">Drinks</div>
@@ -564,7 +564,7 @@
     </div>
     <div role="group" aria-label="five group" >
 
-        <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerMenu&action=listPlatByType&type=sauce" class="btn-group"  id="saucediv" onclick="setColor('sauce');">
+        <a href="?controller=Menu&type=sauce" class="btn-group"  id="saucediv" onclick="setColor('sauce');">
             <img  id="sauceimg" src="../../resources/assets/img/sauces.png" alt="..." />
         </a>
         <div class="title">Sauces</div>
@@ -584,7 +584,7 @@
                 </li>
                 <h2 style="text-align: center;color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold " >Poitrine de poulet grillée</h2>
                 <h1 style="text-align: center;"><span style="font-weight:bold;font-size:45px;font-family:Comic Sans MS, Comic Sans, cursive">852 </span><span style="font-size:35px ; color:rgba(232,88,82,100)">$ </span></h1>
-                <h1 style="text-align: center;color:#999999"><span> <logo src="resources/../../resources/assets/logo/time.png" style="width:10%;height:10%;"  /></span><span style="font-weight:bold;font-size:20px;padding-top:10%"> 30 min </span></h1>
+                <h1 style="text-align: center;color:#999999"><span> <logo src="resources/../../resources/assets/img/time.png" style="width:10%;height:10%;"  /></span><span style="font-weight:bold;font-size:20px;padding-top:10%"> 30 min </span></h1>
         
             </div>';
     endforeach;
@@ -639,26 +639,26 @@
         switch(id){
             case 'salad':
                 property.style.backgroundColor = "#Fdef09";
-                propertyImg.src = "../../resources/assets/logo/salad.png";
+                propertyImg.src = "/resources/assets/img/salad.png";
                 break;
 
             case 'main':
 
                 property.style.backgroundColor = "#Fdef09";
-                propertyImg.src = "../../resources/assets/logo/steak.png";
+                propertyImg.src = "../../resources/assets/img/steak.png";
                 break;
 
             case 'dessert':
                 property.style.backgroundColor = "#Fdef09";
-                propertyImg.src = "../../resources/assets/logo/cake.png";
+                propertyImg.src = "../../resources/assets/img/cake.png";
                 break;
             case 'drink':
                 property.style.backgroundColor = "#Fdef09";
-                propertyImg.src = "../../resources/assets/logo/cocktail.png";
+                propertyImg.src = "../../resources/assets/img/cocktail.png";
                 break;
             case 'sauce':
                 property.style.backgroundColor = "#Fdef09";
-                propertyImg.src = "../../resources/assets/logo/sauces.png";
+                propertyImg.src = "../../resources/assets/img/sauces.png";
                 break;
         }
     }
@@ -673,7 +673,7 @@
                 }
 
                 property.style.backgroundColor = "white";
-                propertyImg.src = "../../resources/assets/logo/saladColor.png";
+                propertyImg.src = "/resources/assets/img/saladColor.png";
                 break;
 
             case 'main':
@@ -682,7 +682,7 @@
                         deleteColor(i);
                 }
                 property.style.backgroundColor = "white";
-                propertyImg.src = "../../resources/assets/logo/steakColor.png";
+                propertyImg.src = "../../resources/assets/img/steakColor.png";
 
                 break;
 
@@ -693,7 +693,7 @@
                         deleteColor(i);
                 }
                 property.style.backgroundColor = "white";
-                propertyImg.src = "../../resources/assets/logo/cakeColor.png";
+                propertyImg.src = "../../resources/assets/img/cakeColor.png";
                 break;
             case 'drink':
                 for (let i = 1; i <=5; i++) {
@@ -701,7 +701,7 @@
                         deleteColor(i);
                 }
                 property.style.backgroundColor = "white";
-                propertyImg.src = "../../resources/assets/logo/cocktailColor.png";
+                propertyImg.src = "../../resources/assets/img/cocktailColor.png";
                 break;
             case 'sauce':
                 for (let i = 1; i <=5; i++) {
@@ -709,7 +709,7 @@
                         deleteColor(i);
                 }
                 property.style.backgroundColor = "white";
-                propertyImg.src = "../../resources/assets/logo/sauceColor.png";
+                propertyImg.src = "../../resources/assets/img/sauceColor.png";
                 break;
         }
 
