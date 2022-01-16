@@ -210,6 +210,47 @@ class Plat
         $sauce2->setQtePlat(0);
         $sauce2->setIngredients('aaaa');
         $sauce2->setTypePlat('sauce');
+
+        $main5 = new Plat();
+        $main5->setId(6);
+        $main5->setPricePlat(12);
+        $main5->setImagePlat('../../resources/assets/img/plate-001.png');
+        $main5->setLibelleplat('Tandoori Chilcken');
+        $main5->setDetailsPlat('15min');
+        $main5->setQtePlat(0);
+        $main5->setIngredients('aaaa');
+        $main5->setTypePlat('main');
+
+        $main6 = new Plat();
+        $main6->setId(7);
+        $main6->setPricePlat(10);
+        $main6->setImagePlat('../../resources/assets/img/plate-007.png');
+        $main6->setLibelleplat('Vegan food');
+        $main6->setDetailsPlat('10min');
+        $main6->setQtePlat(0);
+        $main6->setIngredients('aaaa');
+        $main6->setTypePlat('salad');
+
+        $main7 = new Plat();
+        $main7->setId(8);
+        $main7->setPricePlat(10);
+        $main7->setImagePlat('../../resources/assets/img/plate-002.png');
+        $main7->setLibelleplat('Salmon');
+        $main7->setDetailsPlat('20min');
+        $main7->setQtePlat(0);
+        $main7->setIngredients('aaaa');
+        $main7->setTypePlat('main');
+
+        $main8 = new Plat();
+        $main8->setId(9);
+        $main8->setPricePlat(10);
+        $main8->setImagePlat('../../resources/assets/img/plate-006.png');
+        $main8->setLibelleplat('Cottage cheese with couli');
+        $main8->setDetailsPlat('5min');
+        $main8->setQtePlat(0);
+        $main8->setIngredients('aaaa');
+        $main8->setTypePlat('dessert');
+
         $myArray = array();
         array_push($myArray,$main1);
         array_push($myArray,$main2);
@@ -217,6 +258,11 @@ class Plat
         array_push($myArray,$main4);
         array_push($myArray,$sauce1);
         array_push($myArray,$sauce2);
+        array_push($myArray, $main5);
+        array_push($myArray, $main6);
+        array_push($myArray, $main7);
+        array_push($myArray, $main8);
+
         return $myArray;
     }
     public function getPlatByID($id,$plats){

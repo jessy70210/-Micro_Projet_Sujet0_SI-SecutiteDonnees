@@ -40,34 +40,6 @@ if(!isset($_GET['controller']) && !isset($_GET['action'])){
 	}else{
 		controllerErreur::erreur("Le contrôleur n'a pas été défini ou champs vides");
 	}
-//    if(isset($_GET['controller'])) {
-//        switch ($_GET['controller']){
-//            case 'controllerMenu':
-//                require('controllerMenu.php');
-//                $controllerMenu=new controllerMenu();
-//                if(isset($_GET['action']) && $_GET['action']=='listPlatByType'){
-//                    if(isset($_GET['type']))
-//                        $controllerMenu->listPlatByType($_GET['type']);
-//                }
-//                break;
-//            case 'controllerPlatDetails':
-//                require('controllerPlatDetails.php');
-//                $controllerPlatDetails=new controllerPlatDetails();
-//                if(isset($_GET['action']) && $_GET['action']=='platChoisi'){
-//                    if(isset($_GET['id']))
-//                        $controllerPlatDetails->platChoisi($_GET['id']);
-//                }
-//                break;
-//            case 'controllerCommande':
-//                require('controllerCommande.php');
-//                $controllerCommande=new controllerCommande();
-//                if(isset($_GET['action']) && $_GET['action']=='afficherCommande'){
-//                      $controllerCommande->afficherCommande();
-//                }else{
-//                      $controllerCommande->ajouterPlat();
-//                }
-//                break;
-//    }
 }
 
 
