@@ -96,7 +96,7 @@
 
     /* When the checkbox is checked, add a blue background */
     .container input:checked ~ .checkmark {
-        background-color: yellow;
+        background-color: #ff241f;
     }
 
     /* Create the checkmark/indicator (hidden when not checked) */
@@ -139,7 +139,7 @@
         top:20px;
         width:25px;
         height:25px;
-        background:#f0bf3c;
+        background:#ff241f;
         text-align: center;
         border-radius: 40%;
         color:white;
@@ -152,7 +152,7 @@
 
     .button {
         position: relative;
-        background-color: #f0bf3c;
+        background-color: #ff241f;
         border: none;
         font-size: 28px;
         color: #FFFFFF;
@@ -199,7 +199,7 @@
         vertical-align: top;
         display: inline-block;
         text-align: center;
-        background-color: #fcf803;
+        background-color: #ff241f;
         height: 150px;
         width: 70px;
         padding-top: 2%;
@@ -219,7 +219,7 @@
         font-weight:bold;
     }
     .box i{
-        margin-top: 10px;
+
         background-color:white;
         cursor: pointer;
         display: inline-block;
@@ -233,19 +233,19 @@
         box-shadow: 5px 5px 5px 5px  grey;
 
     }
-    .box i{
-        margin-top: 25%;
-    }
+
     .box p{
         text-align: center;
         font-size: 32px;
         font-weight: bold;
         font-family: cursive;
         font-style: italic;
-
+    }
+    .box img{
+        margin-right: 5%;
     }
 
-    a{
+    a, a:hover, a:active{
         color: black;
     }
     .header-icon{
@@ -270,11 +270,33 @@
     .command-footer span{
 
     }
-    button{
+    .checkout {
+        text-align: center;
+        margin-bottom: 5%;
 
     }
+    .checkout button{
+        background-color: #ff241f;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 10%;
+        color:white;
+        position: absolute;
+        bottom: 0px;
 
 
+    }
+    .header-nav a{
+        font-weight: bold;
+        font-size: 32px;
+        border-bottom: 5px solid #ff241f;
+        padding-bottom: 1px;
+        font-family: cursive;
+        color: black;
+    }
+    .header-nav a:hover{
+        color: black;
+    }
 </style>
 
 
@@ -283,22 +305,29 @@
 <div class="col-md-12  d-flex justify-content-between header-icon">
 
         <div class="box">
-           <div class="col-md-2 " ><img src="../../resources/assets/img/logo.png" style="width: 200px;"></div>
+           <div class="col-md-2" >
+               <img src="../../resources/logo/intro.png" style="width: 200px;"></div>
         </div>
-    </div>
+
     <div class="col-md-2">
         <div class="box">
-            <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerCommande&action=afficherCommande"><i class="fas fa-chevron-left fa-4x"></i></a>
+            <a href="?controller=Menu"><i class="fas fa-chevron-left fa-4x"></i></a>
         </div>
     </div>
 </div>
-<div class="header-commande">
+<!--<div class="header-commande">
     <h1 >
         Checkout your order<span class="wave" style="font-size:65px">💸</span><span class="wave" style="font-size:65px">💳</span>
     </h1>
     <h1 >
         <span>And you will receive your delicious food very quickly 😋</span>
     </h1>
+</div>-->
+<div class="header-nav">
+    <div class="d-flex justify-content-around">
+        <a>Checkout</a>
+        <a>Done order</a>
+    </div>
 </div>
 <ul class="cards2">
     <?php
@@ -313,19 +342,18 @@
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <logo src="'.$_SESSION['myData'][$i]['imagePlat'].'" class="card__image2" alt=""  />
+                <img src="'.$_SESSION['myData'][$i]['imagePlat'].'" class="card__image2" alt=""  />
             </a>
             <div style="padding-top:13%">
                 <p style="color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold ;font-size:35px;margin-top:-90px;margin-bottom:0px" >' . $_SESSION['myData'][$i]['libelleplat'] . '</p>
              <div class="details-plat">
                 <p  style="font-weight:bold;font-size:45px;font-family:Comic Sans MS, Comic Sans, cursive;margin-top:100px">852<span style="font-size:35px ; color:#f0bf3c">$ </span> </p>
                  <div class="plat-qte">
-                    <logo  src="../../resources/assets/logo/group.png" >
+                    <img  src="../../resources/assets/img/group.png" >
                     <div class="icon-caption"><b>0'.$_SESSION['myData'][$i]['qtePlat'].'<br/>People</b></div>
                 </div>
-                </div>
-               
-                <div class="card"  > </div>
+                </div> 
+                <div class="card"></div>
             </div>
            
         </li>
@@ -383,7 +411,9 @@
 
 </ul>
 
-    <button class="button" style=" margin-left:20%;"> Checkout </button>
+<div class="checkout">
+    <button type="button" class="btn btn-rounded">Checkout</button>
+</div>
 
 </body>
 </html>

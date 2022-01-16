@@ -80,7 +80,7 @@
         position:absolute;
         top:-5%;
         left:40%;
-        background-color:  #ff0921;
+        background-color:  #ff241f;
         border-radius: 50px;
         box-shadow: 10px 5px 5px darkgray;
         width: 200px;
@@ -88,7 +88,7 @@
     }
     .qty .count {
         color: #000;
-        background-color:  #ff0921;
+        background-color:  #ff241f;
         display: inline-block;
         align-items: center;
         font-size: 50px;
@@ -146,7 +146,7 @@
         vertical-align: top;
         display: inline-block;
         text-align: center;
-        background-color:  #ff0921;
+        background-color:  #ff241f;
         height: 150px;
         width: 70px;
         padding-top: 2%;
@@ -196,7 +196,7 @@
     .ingredients-list li::before {
         font-family: 'FontAwesome';
         content: '\2022 ';
-        color:  #ff0921;
+        color:  #ff241f;
         display: inline-block;
         width: 1em;
         margin-left: -1em;
@@ -208,7 +208,7 @@
         color:grey;
     }
     .add-dish{
-        background-color: #ff3842 !important;
+        background-color: #ff241f !important;
         cursor: pointer;
         display: inline-block;
         align-items: center;
@@ -238,6 +238,7 @@
     .add-container button{
         background: none;
         border: none;
+        outline: none;
     }
     .footer-add{
         height: 150px;
@@ -258,7 +259,7 @@
 
     }
     .box span{
-        background-color:  #ff0921;
+        background-color:  #ff241f;
         position: absolute;
         top:0px;
         font-size: 25px;
@@ -267,9 +268,9 @@
 
     }
     .header-price span{
-        color: #ff3842 ;
+        color:#ff241f ;
     }
-    a{
+    a, a:hover,a:active{
         color: black;
     }
 
@@ -278,21 +279,23 @@
 
 
 
+
 </style>
-<form method="post" action="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerCommande&action=ajouterPlat">
+<form method="post" action="?controller=Commande">
     <input type="hidden"  name="id" size="12" maxlength="12" value="<?php echo $id; ?>">
     <div class="card" style="" >
         <div class="img-container">
             <div class="col-md-12 container d-flex justify-content-between img-text">
                 <div class="col-md-2 " >
                     <div class="box">
-                        <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerMenu&action=listPlatByType&type=salad"><i class="fas fa-chevron-left fa-3x"></i></a>
+                        <a href="?controller=Menu&qte=<?php echo $qte;?>"><i class="fas fa-chevron-left fa-3x"></i></a>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="box">
-                        <a href="../../Micro_Projet_Sujet0_SI-SecutiteDonnees/controller/routeur.php?controller=controllerCommande&action=afficherCommande"><i class="fas fa-shopping-bag fa-3x"></i></a>
-                        <span class="translate-middle badge rounded-pill " id="qte"><?php echo $qte;?></span>
+                        <a href="?controller=Commande"><i class="fas fa-shopping-bag fa-3x"></i></a>
+                        <span class="translate-middle badge rounded-pill " id="qte"><?php if(intval($qte)!=0) echo $qte;?></span>
+
                     </div>
                 </div>
             </div>
@@ -318,7 +321,6 @@
                 <div class="container">
                     <div class="row">
                         <div class=" card-body-icon ">
-
                             <img  src="../../resources/assets/img/star.png">
                             <div class="icon-caption"><b>4.5</b></div>
                         </div>
