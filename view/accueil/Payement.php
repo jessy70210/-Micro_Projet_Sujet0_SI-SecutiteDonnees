@@ -101,7 +101,8 @@
     }
     .logo img{
         width: 500px;
-        margin-left: 10vh;
+        margin-left: 25%;
+        margin-top: 30%;
 
 
     }
@@ -109,8 +110,8 @@
         font-weight: bold;
         font-size: 2vh;
         position: absolute;
-        top:17vh;
-        left:40vw;
+        top:31%;
+        left:45%;
     }
 
 </style>
