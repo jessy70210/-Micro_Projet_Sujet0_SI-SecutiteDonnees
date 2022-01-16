@@ -20,6 +20,8 @@
 
         <!-- MDB -->
         <script src="../../resources/script/script.js"></script>
+
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
     </head>
     <body>
 
