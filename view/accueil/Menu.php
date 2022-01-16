@@ -11,7 +11,7 @@
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <script href="assets/boostrap/js/style.js"></script>
-
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 <body >
@@ -536,17 +536,9 @@
 
 
 <div id="cover">
-    <form method="get" action="">
         <div class="tb">
-            <div class="td"><input type="text" placeholder="Search" required></div>
-            <div class="td" id="s-cover">
-                <button type="submit">
-                    <div id="s-circle"></div>
-                    <span></span>
-                </button>
-            </div>
+            <div class="td"><input oninput="w3.filterHTML('#cards', '.plat', this.value)" type="text" placeholder="Search"></div>
         </div>
-    </form>
 </div>
 
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
@@ -586,7 +578,7 @@
 </div>
 
 
-<ul class="cards">
+<ul class="cards" id="cards">
     <?php
     foreach ($platsFiltres as $plat):
         echo '
