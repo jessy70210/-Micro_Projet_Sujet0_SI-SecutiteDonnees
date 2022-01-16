@@ -22,18 +22,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: azure;
+        background-color: whitesmoke;
     }
 
     .container{
         width: 750px;
         height: 500px;
-        border: 1px solid;
+        border-radius: 20px;
         background-color: white;
         display: flex;
         flex-direction: column;
         padding: 40px;
         justify-content:space-around;
+        box-shadow: 10px 10px 10px darkgray;
     }
 
     .container h1{
@@ -71,7 +72,7 @@
     }
 
     a{
-        background-color: blueviolet;
+        background-color: #E85852FF;
         color: white;
         text-align: center;
         text-transform: uppercase;
@@ -82,7 +83,7 @@
     }
 
     a:hover{
-        background-color: dodgerblue;
+        background-color: #E85852FF;
     }
 
     .cards img{

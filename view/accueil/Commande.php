@@ -96,7 +96,7 @@
 
     /* When the checkbox is checked, add a blue background */
     .container input:checked ~ .checkmark {
-        background-color: #ff241f;
+        background-color: #E85852FF;
     }
 
     /* Create the checkmark/indicator (hidden when not checked) */
@@ -139,7 +139,7 @@
         top:20px;
         width:25px;
         height:25px;
-        background:#ff241f;
+        background:#E85852FF;
         text-align: center;
         border-radius: 40%;
         color:white;
@@ -152,7 +152,7 @@
 
     .button {
         position: relative;
-        background-color: #ff241f;
+        background-color: #E85852FF;
         border: none;
         font-size: 28px;
         color: #FFFFFF;
@@ -199,7 +199,7 @@
         vertical-align: top;
         display: inline-block;
         text-align: center;
-        background-color: #ff241f;
+        background-color: #E85852FF;
         height: 150px;
         width: 70px;
         padding-top: 2%;
@@ -276,7 +276,7 @@
 
     }
     .checkout button{
-        background-color: #ff241f;
+        background-color: #E85852FF;
         font-size: 64px;
         font-weight: bold;
         border-radius: 50px;
@@ -292,7 +292,7 @@
     .header-nav a{
         font-weight: bold;
         font-size: 32px;
-        border-bottom: 5px solid #ff241f;
+        border-bottom: 5px solid #E85852FF;
         padding-bottom: 1px;
         font-family: cursive;
         color: black;

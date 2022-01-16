@@ -80,7 +80,7 @@
         position:absolute;
         top:-5%;
         left:40%;
-        background-color:  #ff241f;
+        background-color:  #E85852FF;
         border-radius: 50px;
         box-shadow: 10px 5px 5px darkgray;
         width: 200px;
@@ -88,7 +88,7 @@
     }
     .qty .count {
         color: #000;
-        background-color:  #ff241f;
+        background-color:  #E85852FF;
         display: inline-block;
         align-items: center;
         font-size: 50px;
@@ -146,7 +146,7 @@
         vertical-align: top;
         display: inline-block;
         text-align: center;
-        background-color:  #ff241f;
+        background-color:  #E85852FF;
         height: 150px;
         width: 70px;
         padding-top: 2%;
@@ -196,7 +196,7 @@
     .ingredients-list li::before {
         font-family: 'FontAwesome';
         content: '\2022 ';
-        color:  #ff241f;
+        color:  #E85852FF;
         display: inline-block;
         width: 1em;
         margin-left: -1em;
@@ -208,7 +208,7 @@
         color:grey;
     }
     .add-dish{
-        background-color: #ff241f !important;
+        background-color: #E85852FF !important;
         cursor: pointer;
         display: inline-block;
         align-items: center;
@@ -259,7 +259,7 @@
 
     }
     .box span{
-        background-color:  #ff241f;
+        background-color:  #E85852FF;
         position: absolute;
         top:0px;
         font-size: 25px;
@@ -268,7 +268,7 @@
 
     }
     .header-price span{
-        color:#ff241f ;
+        color:#E85852FF ;
     }
     a, a:hover,a:active{
         color: black;
