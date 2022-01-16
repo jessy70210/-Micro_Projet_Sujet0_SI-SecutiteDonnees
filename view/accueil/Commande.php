@@ -304,6 +304,11 @@
     .header-nav a:hover{
         color: black;
     }
+    .box p{
+        position: absolute;
+        top:70%;
+        left:8%;
+    }
 </style>
 
 
@@ -314,6 +319,7 @@
         <div class="box">
            <div class="col-md-2" >
                <img src="../../resources/logo/intro.png" style="width: 200px;"></div>
+                <p>Saf<span style="color:#E85852FF ">E</span>at</p>
         </div>
 
     <div class="col-md-2">

@@ -507,6 +507,15 @@
         width: 425px;
         height: 425px;
     }
+    .box p{
+        position: absolute;
+        top:75%;
+        left:49%;
+        font-size: 32px;
+    }
+    .img-text{
+        margin-bottom: 5%;
+    }
 
 
 
@@ -515,6 +524,7 @@
     <div class="col-md-2 " >
         <div class="box">
             <img src="../../resources/logo/intro.png"/>
+            <p>Saf<i style="color:#E85852FF ">E</i>at</p>
       </div>
     </div>
     <div class="col-md-2">
