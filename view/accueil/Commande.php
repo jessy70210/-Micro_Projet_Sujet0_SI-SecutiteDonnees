@@ -282,7 +282,7 @@
         font-weight: bold;
         border-radius: 50px;
         color:white;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 30%;
         padding-left: 5%;
@@ -351,7 +351,7 @@
             <div style="padding-top:13%">
                 <p style="color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold ;font-size:35px;margin-top:-90px;margin-bottom:0px" >'.$_SESSION['myData'][$i]['libelleplat'].'</p>
              <div class="details-plat">
-                <p  style="font-weight:bold;font-size:45px;font-family:Comic Sans MS, Comic Sans, cursive;margin-top:100px">'.$_SESSION['myData'][$i]['pricePlat'].'<span style="font-size:35px ; color:#f0bf3c">$ </span> </p>
+                <p  style="font-weight:bold;font-size:45px;font-family:Comic Sans MS, Comic Sans, cursive;margin-top:100px">'.$_SESSION['myData'][$i]['pricePlat'].'<span style="font-size:35px ; color:#E85852FF">$</span> </p>
                  <div class="plat-qte">
                     <img  src="../../resources/assets/img/group.png" >
                     <div class="icon-caption"><b>0'.$_SESSION['myData'][$i]['qtePlat'].'<br/>People</b></div>

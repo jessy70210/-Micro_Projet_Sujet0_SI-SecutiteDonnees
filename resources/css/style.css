@@ -12,9 +12,13 @@
     font-family: 'ArchitectsDaughter' ;
     src: url("../font/ArchitectsDaughter-Regular.ttf");
 }
+@font-face {
+    font-family: 'Cera-Pro' ;
+    src: url("../font/Cera-Pro.otf");
+}
 
-p {
-    font-family: Estonia;
+body{
+    font-family:"Cera-Pro";
 }
 
 .vh-30 {
@@ -28,9 +32,7 @@ p {
     background-size: auto 100vh;
 }*/
 
-.font-pacifico {
-    font-family: Pacifico;
-}
+
 
 nav{
     width: 547px;
@@ -38,7 +40,7 @@ nav{
     margin-bottom: 20px;
     background-color:#717fe0;
     border-radius: 50px;
-    font-family: cursive;
+
 
 }
 .nav-item{
@@ -228,7 +230,7 @@ ul{
 main {
     height: 100vh;
     width: 100vw;
-    font-family: cursive;
+
 
 }
 body, html {
