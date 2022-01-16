@@ -192,7 +192,7 @@
         width: 120%;
         padding: 30px;
 
-        background-color: #ff241f;
+        background-color: #E85852FF;
         border-radius: 20px;
         box-shadow: 0 10px 40px rgba(232,88,82,100), 0 0 0 20px #ffffffeb;
         transform: scale(0.6);
@@ -322,7 +322,7 @@
         font-family: Nunito;
         font-size: 14px;
         text-decoration: none;
-        background-color: #ff241f;
+        background-color: #E85852FF;
         border-radius: 4px;
         box-shadow: 0 10px 20px -5px rgba(255, 117, 117, 0.86);
         z-index: 125;
@@ -352,7 +352,7 @@
         height: 100%;
     }
     .btn-group {
-        background-color: #ff241f ;
+        background-color: #E85852FF ;
         cursor: pointer;
         display: inline-block;
         align-items: center;
@@ -463,7 +463,7 @@
         box-shadow: 5px 5px 5px  darkgray;
     }
     .box1 span{
-        background-color:  #ff241f;
+        background-color:  #E85852FF;
         position: absolute;
         top:15%;
         right:30%;
@@ -652,26 +652,26 @@
 
         switch(id){
             case 'salad':
-                property.style.backgroundColor = "#ff241f";
+                property.style.backgroundColor = "#E85852FF";
                 propertyImg.src = "../../resources/assets/img/salad.png";
                 break;
 
             case 'main':
 
-                property.style.backgroundColor = "#ff241f";
+                property.style.backgroundColor = "#E85852FF";
                 propertyImg.src = "../../resources/assets/img/steak.png";
                 break;
 
             case 'dessert':
-                property.style.backgroundColor = "#ff241f";
+                property.style.backgroundColor = "#E85852FF";
                 propertyImg.src = "../../resources/assets/img/cake.png";
                 break;
             case 'drink':
-                property.style.backgroundColor = "#ff241f";
+                property.style.backgroundColor = "#E85852FF";
                 propertyImg.src = "../../resources/assets/img/cocktail.png";
                 break;
             case 'sauce':
-                property.style.backgroundColor = "#ff241f";
+                property.style.backgroundColor = "#E85852FF";
                 propertyImg.src = "../../resources/assets/img/sauces.png";
                 break;
         }

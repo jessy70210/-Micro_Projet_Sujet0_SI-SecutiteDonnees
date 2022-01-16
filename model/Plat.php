@@ -261,6 +261,96 @@ class Plat
         $main9->setIngredients('aaaa');
         $main9->setTypePlat('drink');
 
+        $main10 = new Plat();
+        $main10->setId(11);
+        $main10->setPricePlat(10);
+        $main10->setImagePlat('../../resources/assets/img/drink2.jpeg');
+        $main10->setLibelleplat('Cottage cheese with couli');
+        $main10->setDetailsPlat('5min');
+        $main10->setQtePlat(0);
+        $main10->setIngredients('aaaa');
+        $main10->setTypePlat('drink');
+
+        $main11 = new Plat();
+        $main11->setId(12);
+        $main11->setPricePlat(10);
+        $main11->setImagePlat('../../resources/assets/img/drink3.jpg');
+        $main11->setLibelleplat('Cottage cheese with couli');
+        $main11->setDetailsPlat('5min');
+        $main11->setQtePlat(0);
+        $main11->setIngredients('aaaa');
+        $main11->setTypePlat('drink');
+
+        $main12 = new Plat();
+        $main12->setId(12);
+        $main12->setPricePlat(10);
+        $main12->setImagePlat('../../resources/assets/img/drink4.jpg');
+        $main12->setLibelleplat('Cottage cheese with couli');
+        $main12->setDetailsPlat('5min');
+        $main12->setQtePlat(0);
+        $main12->setIngredients('aaaa');
+        $main12->setTypePlat('drink');
+
+        $main13 = new Plat();
+        $main13->setId(13);
+        $main13->setPricePlat(10);
+        $main13->setImagePlat('../../resources/assets/img/dessert1.jpg');
+        $main13->setLibelleplat('Cottage cheese with couli');
+        $main13->setDetailsPlat('5min');
+        $main13->setQtePlat(0);
+        $main13->setIngredients('aaaa');
+        $main13->setTypePlat('dessert');
+
+        $main14 = new Plat();
+        $main14->setId(14);
+        $main14->setPricePlat(10);
+        $main14->setImagePlat('../../resources/assets/img/dessert2.jpg');
+        $main14->setLibelleplat('Cottage cheese with couli');
+        $main14->setDetailsPlat('5min');
+        $main14->setQtePlat(0);
+        $main14->setIngredients('aaaa');
+        $main14->setTypePlat('dessert');
+
+        $main15 = new Plat();
+        $main15->setId(15);
+        $main15->setPricePlat(10);
+        $main15->setImagePlat('../../resources/assets/img/dessert3.jpg');
+        $main15->setLibelleplat('Cottage cheese with couli');
+        $main15->setDetailsPlat('5min');
+        $main15->setQtePlat(0);
+        $main15->setIngredients('aaaa');
+        $main15->setTypePlat('dessert');
+
+        $main16 = new Plat();
+        $main16 ->setId(16);
+        $main16 ->setPricePlat(10);
+        $main16 ->setImagePlat('../../resources/assets/img/salad1.jpg');
+        $main16 ->setLibelleplat('Cottage cheese with couli');
+        $main16 ->setDetailsPlat('5min');
+        $main16 ->setQtePlat(0);
+        $main16 ->setIngredients('aaaa');
+        $main16 ->setTypePlat('salad');
+
+        $main17 = new Plat();
+        $main17->setId(17);
+        $main17->setPricePlat(10);
+        $main17->setImagePlat('../../resources/assets/img/salad2.jpg');
+        $main17->setLibelleplat('Cottage cheese with couli');
+        $main17->setDetailsPlat('5min');
+        $main17->setQtePlat(0);
+        $main17->setIngredients('aaaa');
+        $main17->setTypePlat('salad');
+
+        $main18 = new Plat();
+        $main18->setId(18);
+        $main18->setPricePlat(10);
+        $main18->setImagePlat('../../resources/assets/img/salad3.jpg');
+        $main18->setLibelleplat('Cottage cheese with couli');
+        $main18->setDetailsPlat('5min');
+        $main18->setQtePlat(0);
+        $main18->setIngredients('aaaa');
+        $main18->setTypePlat('salad');
+
         $myArray = array();
         array_push($myArray,$main1);
         array_push($myArray,$main2);
@@ -273,6 +363,15 @@ class Plat
         array_push($myArray, $main7);
         array_push($myArray, $main8);
         array_push($myArray, $main9);
+        array_push($myArray, $main10);
+        array_push($myArray, $main11);
+        array_push($myArray, $main12);
+        array_push($myArray, $main13);
+        array_push($myArray, $main14);
+        array_push($myArray, $main15);
+        array_push($myArray, $main16);
+        array_push($myArray, $main17);
+        array_push($myArray, $main18);
 
         return $myArray;
     }
