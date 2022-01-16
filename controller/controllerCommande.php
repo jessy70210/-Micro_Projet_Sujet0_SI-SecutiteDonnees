@@ -4,7 +4,7 @@ require ($_SERVER['DOCUMENT_ROOT'].'/model/Plat.php');
 class controllerCommande{
 
     public static function readAll(){
-
+        $qte=$_GET['qte'];
         if(isset($_POST['id'])){
             $platModel=new Plat();
             $plats=$platModel->listPlats();

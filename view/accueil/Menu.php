@@ -509,6 +509,7 @@
     }
     .box p{
         position: absolute;
+        font-weight: bold;
         top:75%;
         left:49%;
         font-size: 32px;
@@ -529,7 +530,7 @@
     </div>
     <div class="col-md-2">
         <div class="box1">
-            <a href="?controller=Commande"><i class="fas fa-shopping-bag fa-3x"></i></a>
+            <a href="<?php echo '?controller=Commande&qte='.$qte?>"><i class="fas fa-shopping-bag fa-3x"></i></a>
             <span class="translate-middle badge badge-pill" id="qte"><?php if(intval($qte)!=0) echo $qte;?></span>
         </div>
     </div>
@@ -559,26 +560,26 @@
 
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
     <div  role="group" aria-label="first group">
-        <a href="?controller=Menu&type=salad" class="btn-group" id="saladdiv" onclick="setColor('salad');">
+        <a href="<?php echo '?controller=Menu&type=salad&qte='.$qte?>" class="btn-group" id="saladdiv" onclick="setColor('salad');">
             <img id="saladimg" src="../../resources/assets/img/salad.png" alt="..."  >
         </a>
         <h1 class="title">Starters</h1>
     </div>
     <div  role="group" aria-label="Second group" >
-        <a href="?controller=Menu&type=main" class="btn-group" id="maindiv" onclick="setColor('main');">
+        <a href="<?php echo '?controller=Menu&type=main&qte='.$qte?>" class="btn-group" id="maindiv" onclick="setColor('main');">
             <img id="mainimg"  src="../../resources/assets/img/steak.png" alt="..." >
         </a>
         <div class="title"style="text-align:center" >Main<br/>Courses</div>
     </div>
     <div role="group" aria-label="Third group" >
 
-        <a href="?controller=Menu&type=dessert" class="btn-group" id="dessertdiv" onclick="setColor('dessert');">
+        <a href="<?php echo '?controller=Menu&type=dessert&qte='.$qte?>" class="btn-group" id="dessertdiv" onclick="setColor('dessert');">
             <img  id="dessertimg" src="../../resources/assets/img/cake.png" alt="..." />
         </a>
         <div class="title">Desserts</div>
     </div>
     <div  role="group" aria-label="fourth group" >
-        <a href="?controller=Menu&type=drink" class="btn-group" id="drinkdiv"  onclick="setColor('drink');">
+        <a href="<?php echo '?controller=Menu&type=drink&qte='.$qte?>" class="btn-group" id="drinkdiv"  onclick="setColor('drink');">
             <img  id="drinkimg" src="../../resources/assets/img/cocktail.png" alt="..." />
         </a>
         <div class="title">Drinks</div>
@@ -586,7 +587,7 @@
     </div>
     <div role="group" aria-label="five group" >
 
-        <a href="?controller=Menu&type=sauce" class="btn-group"  id="saucediv" onclick="setColor('sauce');">
+        <a href="<?php echo '?controller=Menu&type=sauce&qte='.$qte?>" class="btn-group"  id="saucediv" onclick="setColor('sauce');">
             <img  id="sauceimg" src="../../resources/assets/img/sauces.png" alt="..." />
         </a>
         <div class="title">Sauces</div>

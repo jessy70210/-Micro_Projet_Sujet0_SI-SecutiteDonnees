@@ -293,7 +293,7 @@
                 </div>
                 <div class="col-md-2">
                     <div class="box">
-                        <a href="?controller=Commande"><i class="fas fa-shopping-bag fa-3x"></i></a>
+                        <a href="<?php echo '?controller=Commande&qte='.$qte?>"><i class="fas fa-shopping-bag fa-3x"></i></a>
                         <span class="translate-middle badge rounded-pill" id="qte"><?php if(intval($qte)!=0) echo $qte;?></span>
                     </div>
                 </div>

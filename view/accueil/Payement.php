@@ -110,7 +110,7 @@
         font-weight: bold;
         font-size: 2vh;
         position: absolute;
-        top:31%;
+        top:38%;
         left:45%;
     }
 

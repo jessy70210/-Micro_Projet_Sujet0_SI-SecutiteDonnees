@@ -324,7 +324,7 @@
 
     <div class="col-md-2">
         <div class="box">
-            <a href="?controller=Menu"><i class="fas fa-chevron-left fa-4x"></i></a>
+            <a href="<?php echo '?controller=Menu&qte='.$qte?>"><i class="fas fa-chevron-left fa-4x"></i></a>
         </div>
     </div>
 </div>
