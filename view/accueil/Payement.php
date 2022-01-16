@@ -9,11 +9,15 @@
 </head>
 <body>
 <style>
+    @font-face {
+        font-family: 'Cera-Pro' ;
+        src: url("../../resources/font/Cera-Pro.otf");
+    }
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
+
     }
 
     body{
@@ -23,6 +27,7 @@
         justify-content: center;
         align-items: center;
         background-color: whitesmoke;
+        font-family:"Cera-Pro",Serif;
     }
 
     .container{

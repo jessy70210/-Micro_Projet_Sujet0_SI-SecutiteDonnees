@@ -16,6 +16,10 @@
 
 <body >
 <style>
+    @font-face {
+        font-family: 'Cera-Pro' ;
+        src: url("../../resources/font/Cera-Pro.otf");
+    }
     :root {
         --surface-color: #fff;
         --curve: 40;
@@ -25,10 +29,11 @@
         box-sizing: border-box;
     }
 
-    body {
-        font-family: 'Noto Sans JP', sans-serif;
-        background-color: whitesmoke;
 
+    body {
+        
+        background-color: whitesmoke;
+        font-family:"Cera-Pro",Serif;
     }
 
     .cards {
@@ -124,7 +129,6 @@
     .card__tagline {
         display: block;
         margin: 1em 0;
-        font-family: "MockFlowFont";
         font-size: .8em;
         color: #D7BDCA;
     }
@@ -140,7 +144,7 @@
         padding: 0 2em 2em;
         margin: 0;
         color: #D7BDCA;
-        font-family: "MockFlowFont";
+        : "MockFlowFont";
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
@@ -175,7 +179,7 @@
     input, button
     {
         color: #fff;
-        font-family: Nunito;
+        : Nunito;
         padding: 0;
         margin: 0;
         border: 0;
@@ -319,7 +323,7 @@
         padding: 10px 14px;
         margin: 20px;
         color: #fff;
-        font-family: Nunito;
+        : Nunito;
         font-size: 14px;
         text-decoration: none;
         background-color: #E85852FF;
@@ -337,7 +341,7 @@
         margin-left: 250px;
         margin-bottom: 20px;
         border-radius: 50px;
-        font-family: cursive;
+        : cursive;
 
     }
     .btn-toolbar{
@@ -376,7 +380,7 @@
         font-size:28px;
         font-weight: bold;
         text-align:center;
-        font-family: cursive;
+        : cursive;
         display: block;
 
     }
@@ -442,7 +446,7 @@
         font-size:30px;
         margin:25px;
         margin-bottom:20px;
-        font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold
+        :Comic Sans MS , Comic Sans, cursive; font-weight:bold
     }
     .welcome-msg{
         text-align: justify;
@@ -466,7 +470,7 @@
         background-color:  #E85852FF;
         position: absolute;
         font-size: 25px;
-        font-family: cursive;
+        : cursive;
         font-weight: bold;
         top:8%;
 
@@ -528,10 +532,10 @@
     </ul>
 </div>
 <div class="welcome-msg">
-    <h1 style="color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold ">
+    <h1 style="color:#444444;  font-weight:bold ">
         Hello client !<span class="wave">👋</span><span class="wave">👋</span>
     </h1>
-    <h1 style="color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold ">
+    <h1 style="color:#444444; font-weight:bold ">
         Welcome to our restaurant <span>❤️ </span>
     </h1>
 </div>
@@ -590,8 +594,8 @@
                         <img src="'.$plat->getImagePlat().'" class="card__image" alt=""  />
                     </a>
                 </li>
-                <h2 style="text-align: center;color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold " >'.$plat->getLibelleplat().'</h2>
-                <h1 style="text-align: center;"><span style="font-weight:bold;font-size:45px;font-family:Comic Sans MS, Comic Sans, cursive">'.$plat->getPricePlat().' </span><span style="font-size:35px ; color:rgba(232,88,82,100)">$ </span></h1>
+                <h2 style="text-align: center;color:#444444; :Comic Sans MS , Comic Sans, cursive; font-weight:bold " >'.$plat->getLibelleplat().'</h2>
+                <h1 style="text-align: center;"><span style="font-weight:bold;font-size:45px;:Comic Sans MS, Comic Sans, cursive">'.$plat->getPricePlat().' </span><span style="font-size:35px ; color:rgba(232,88,82,100)">$ </span></h1>
                 <h1 style="text-align: center;color:#999999"><span> <img src="../../resources/assets/img/time.png" style="width:10%;height:10%;"  /></span><span style="font-weight:bold;font-size:20px;padding-top:10%"> 30 min </span></h1>
         
             </div>';
@@ -604,9 +608,9 @@
                 <img src="../../resources/assets/img/2.jpg" class="card__image" alt=""  />
             </a>
       </li>
-        <h2 style="text-align: center;color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold " >Poitrine de poulet grillée</h2>
+        <h2 style="text-align: center;color:#444444; :Comic Sans MS , Comic Sans, cursive; font-weight:bold " >Poitrine de poulet grillée</h2>
 
-        <h1 style="text-align: center;"><span style="font-weight:bold;font-size:45px;font-family:Comic Sans MS, Comic Sans, cursive">852 </span><span style="font-size:35px ; color:rgba(232,88,82,100)">$ </span></h1>
+        <h1 style="text-align: center;"><span style="font-weight:bold;font-size:45px;:Comic Sans MS, Comic Sans, cursive">852 </span><span style="font-size:35px ; color:rgba(232,88,82,100)">$ </span></h1>
         <h1 style="text-align: center;color:#999999"><span> <img src="../../resources/assets/img/time.png" style="width:10%;height:10%;"  /></span><span style="font-weight:bold;font-size:20px;padding-top:10%"> 30 min </span></h1>
 
     </div>
@@ -617,9 +621,9 @@
             </a>
 
         </li>
-        <h2 style="text-align: center;color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold " >Poitrine de poulet grillée</h2>
+        <h2 style="text-align: center;color:#444444; :Comic Sans MS , Comic Sans, cursive; font-weight:bold " >Poitrine de poulet grillée</h2>
 
-        <h1 style="text-align: center;"><span style="font-weight:bold;font-size:45px;font-family:Comic Sans MS, Comic Sans, cursive">852 </span><span style="font-size:35px ; color:rgba(232,88,82,100)">$ </span></h1>
+        <h1 style="text-align: center;"><span style="font-weight:bold;font-size:45px;:Comic Sans MS, Comic Sans, cursive">852 </span><span style="font-size:35px ; color:rgba(232,88,82,100)">$ </span></h1>
         <h1 style="text-align: center;color:#999999"><span> <img src="../../resources/assets/img/time.png" style="width:10%;height:10%;"  /></span><span style="font-weight:bold;font-size:20px;padding-top:10%"> 30 min </span></h1>
 
     </div>
@@ -631,9 +635,9 @@
             </a>
 
         </li>
-        <h2 style="text-align: center;color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold " >Poitrine de poulet grillée</h2>
+        <h2 style="text-align: center;color:#444444; :Comic Sans MS , Comic Sans, cursive; font-weight:bold " >Poitrine de poulet grillée</h2>
 
-        <h1 style="text-align: center;"><span style="font-weight:bold;font-size:45px;font-family:Comic Sans MS, Comic Sans, cursive">852 </span><span style="font-size:35px ; color:rgba(232,88,82,100)">$ </span></h1>
+        <h1 style="text-align: center;"><span style="font-weight:bold;font-size:45px;:Comic Sans MS, Comic Sans, cursive">852 </span><span style="font-size:35px ; color:rgba(232,88,82,100)">$ </span></h1>
         <h1 style="text-align: center;color:#999999"><span> <img src="../../resources/assets/img/time.png" style="width:10%;height:10%;"  /></span><span style="font-weight:bold;font-size:20px;padding-top:10%"> 30 min </span></h1>
 
     </div>-->

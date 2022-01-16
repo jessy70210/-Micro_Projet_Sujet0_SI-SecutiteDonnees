@@ -15,8 +15,13 @@
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <style>
+    @font-face {
+        font-family: 'Cera-Pro' ;
+        src: url("../../resources/font/Cera-Pro.otf");
+    }
     body{
         background-color: whitesmoke;
+        font-family:"Cera-Pro",Serif;
     }
     .cards2 {
         display: grid;
@@ -147,7 +152,7 @@
         font-size:40px;
         margin:5px;
         margin-bottom:20px;
-        font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold
+
     }
 
     .button {
@@ -167,7 +172,7 @@
         margin-top:5%;
 
         border-radius:20%;
-        font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold ;font-size:45px;
+
 
     }
 
@@ -215,7 +220,7 @@
 
         margin-left:5%;
         color:#444444;
-        font-family:Comic Sans MS , Comic Sans, cursive;
+
         font-weight:bold;
     }
     .box i{
@@ -238,7 +243,6 @@
         text-align: center;
         font-size: 32px;
         font-weight: bold;
-        font-family: cursive;
         font-style: italic;
     }
     .box img{
@@ -283,7 +287,7 @@
         border-radius: 50px;
         color:white;
         position: fixed;
-        bottom: 0;
+        bottom: 1%;
         left: 30%;
         padding-left: 5%;
         padding-right: 5%;
@@ -294,8 +298,7 @@
         font-weight: bold;
         font-size: 32px;
         border-bottom: 5px solid #E85852FF;
-        padding-bottom: 1px;
-        font-family: cursive;
+        padding-bottom: 1px
         color: black;
     }
     .header-nav a:hover{
@@ -349,9 +352,9 @@
                 <img src="'.$_SESSION['myData'][$i]['imagePlat'].'" class="card__image2" alt=""  />
             </a>
             <div style="padding-top:13%">
-                <p style="color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold ;font-size:35px;margin-top:-90px;margin-bottom:0px" >'.$_SESSION['myData'][$i]['libelleplat'].'</p>
+                <p style="color:#444444;font-size:35px;margin-top:-90px;margin-bottom:0px" >'.$_SESSION['myData'][$i]['libelleplat'].'</p>
              <div class="details-plat">
-                <p  style="font-weight:bold;font-size:45px;font-family:Comic Sans MS, Comic Sans, cursive;margin-top:100px">'.$_SESSION['myData'][$i]['pricePlat'].'<span style="font-size:35px ; color:#E85852FF">$</span> </p>
+                <p  style="font-weight:bold;font-size:45px;">'.$_SESSION['myData'][$i]['pricePlat'].'<span style="font-size:35px ; color:#E85852FF">$</span> </p>
                  <div class="plat-qte">
                     <img  src="../../resources/assets/img/group.png" >
                     <div class="icon-caption"><b>0'.$_SESSION['myData'][$i]['qtePlat'].'<br/>People</b></div>

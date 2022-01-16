@@ -17,11 +17,15 @@
 </head>
 <body>
 <style>
+    @font-face {
+        font-family: 'Cera-Pro' ;
+        src: url("../../resources/font/Cera-Pro.otf");
+    }
     html, body {
         max-width: 100%;
         overflow-x: hidden;
         height: 100%;
-
+        font-family:"Cera-Pro",Serif;
     }
 
     .card{
@@ -134,7 +138,7 @@
     .card-body-header{
         margin-top: 4%;
         font-weight: bold;
-        font-family: cursive;
+
 
     }
 
@@ -161,7 +165,6 @@
     }
     .icon-caption{
         display: block;
-        font-family: cursive;
         margin-top: 25%;
         font-size: 20px;
     }
@@ -175,18 +178,16 @@
     .cart-body-details{
         margin-top: 10%;
         font-weight: bold;
-        font-family: cursive;
+
     }
     .cart-body-details p{
         display: block;
-        font-family: cursive;
         font-size: 30px;
         color: grey;
 
     }
     .cart-body-ingredients{
         margin-top: 10%;
-        font-family: cursive;
         font-size: 30px;
         font-weight: bold;
     }
@@ -263,7 +264,6 @@
         position: absolute;
         top:0px;
         font-size: 25px;
-        font-family: cursive;
         font-weight: bold;
 
     }
