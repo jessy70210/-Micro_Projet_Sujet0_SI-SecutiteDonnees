@@ -14,7 +14,7 @@ class controllerMenu
 
             $platsFiltres = $plat->getPlatByType($type, $plats);
             //require ($_SERVER['DOCUMENT_ROOT'].'/view/accueil/Menu.php');
-        require(File::build_path(array("view/accueil", "Menu.php")));
+            require(File::build_path(array("view/accueil", "Menu.php")));
     }
 }
 

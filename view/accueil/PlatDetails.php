@@ -288,14 +288,13 @@
             <div class="col-md-12 container d-flex justify-content-between img-text">
                 <div class="col-md-2 " >
                     <div class="box">
-                        <a href="?controller=Menu&qte=<?php echo $qte;?>"><i class="fas fa-chevron-left fa-3x"></i></a>
+                        <a href="<?php echo '?controller=Menu&qte='.$qte?>"><i class="fas fa-chevron-left fa-3x"></i></a>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="box">
                         <a href="?controller=Commande"><i class="fas fa-shopping-bag fa-3x"></i></a>
-                        <span class="translate-middle badge rounded-pill " id="qte"><?php if(intval($qte)!=0) echo $qte;?></span>
-
+                        <span class="translate-middle badge rounded-pill" id="qte"><?php if(intval($qte)!=0) echo $qte;?></span>
                     </div>
                 </div>
             </div>

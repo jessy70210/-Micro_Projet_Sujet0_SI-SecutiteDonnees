@@ -13,7 +13,8 @@ class controllerCommande{
             $_SESSION['myData'][] = array(
                 'libelleplat'=> $plat->getLibellePlat(),
                  'qtePlat' =>$plat->getQtePlat(),
-                'imagePlat'=>$plat->getImagePlat()
+                'imagePlat'=>$plat->getImagePlat(),
+                'pricePlat'=>$plat->getPricePlat()
             );
 
             header('Location:?controller=PlatDetails&id='.$_POST['id'].'&qte='.$_POST['qty']);

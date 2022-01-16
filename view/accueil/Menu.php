@@ -400,12 +400,12 @@
     }
 
 
-    .badge {
+    /*.badge {
         background: radial-gradient( 5px -9px, circle, white 8%, red 26px );
         background-color: red;
         border: 2px solid white;
         border-radius: 50%; /* one half of ( (border * 2) + height + padding ) */
-        box-shadow: 1px 1px 1px black;
+       /* box-shadow: 1px 1px 1px black;
         color: white;
         font: bold 15px/13px Helvetica, Verdana, Tahoma;
         height: 106px;
@@ -413,9 +413,9 @@
         padding: 1px 3px 0 3px;
         text-align:center;
         margin-top:20px;
-        margin-left:20px;
+        margin-left:20px;*/
 
-    }
+    /*}*/
 
 
 
@@ -465,18 +465,20 @@
     .box1 span{
         background-color:  #E85852FF;
         position: absolute;
-        top:15%;
-        right:30%;
         font-size: 25px;
         font-family: cursive;
         font-weight: bold;
-        width: 20%;
-        height: 20%;
+        top:8%;
+
+
+
 
     }
-    a{
+    a,a:active,a:hover{
         color:black;
+        text-decoration: none;
     }
+
     .img-text{
 
     }
@@ -512,9 +514,9 @@
       </div>
     </div>
     <div class="col-md-2">
-        <div class="box1 cart-icon">
+        <div class="box1">
             <a href="?controller=Commande"><i class="fas fa-shopping-bag fa-3x"></i></a>
-            <span class="translate-middle  rounded-pill" id="qte"><?php if(intval($qte)!=0) echo $qte;?></span>
+            <span class="translate-middle badge badge-pill" id="qte"><?php if(intval($qte)!=0) echo $qte;?></span>
         </div>
     </div>
 </div>
@@ -584,7 +586,7 @@
         echo '
             <div class="plat">
                 <li>
-                    <a href="?controller=PlatDetails&id='.$plat->getId().'&qte=&nb=0" class="card">
+                    <a href="?controller=PlatDetails&id='.$plat->getId().'&qte='.$qte.'" class="card">
                         <img src="'.$plat->getImagePlat().'" class="card__image" alt=""  />
                     </a>
                 </li>
@@ -688,7 +690,7 @@
                         deleteColor(i);
                 }
                 property.style.backgroundColor = "white";
-                propertyImg.src = "../../resources/assets/img/steakColor.png";
+                propertyImg.src = "../../resources/assets/img/SteakColor.png";
 
                 break;
 

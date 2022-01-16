@@ -89,7 +89,9 @@
     .cards img{
         width: 100px;
     }
+
 </style>
+
 <div class="container">
     <h1>Confirm Your Payment</h1>
     <div class="first-row">
