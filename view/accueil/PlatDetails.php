@@ -43,7 +43,7 @@
         height:100%;
         border-top-left-radius: 50px 50px;
         border-top-right-radius: 50px 50px;
-        background-color: #f0bf3c;z-index: 50;
+        background-color: white;z-index: 50;
 
     }
     .card-body{
@@ -310,10 +310,14 @@
             <div class="card-body-header d-flex justify-content-between ">
                 <div class="header-title">
                     <h1 style="width:90%"><b><?php echo $platChoisi->getLibelleplat(); ?></b></h1>
-                    <h4 style="color:grey;"><b>Dessert</b></h4>
+                    <h4 style="color:grey;"><b><?php switch ($platChoisi->getTypePlat()){
+                                case 'salad':echo 'Starter';break;
+                                case 'main':echo 'Main Course';break;
+                                default:echo $platChoisi->getTypePlat();break;
+                            }; ?></b></h4>
                 </div>
                 <div class="header-price">
-                    <h1><b>6.99<span>$</span></b></h1>
+                    <h1><b><?php echo $platChoisi->getPricePlat(); ?><span>$</span></b></h1>
                 </div>
             </div>
 
@@ -344,10 +348,10 @@
             <div class="cart-body-ingredients">
                 <h1><b>Ingredients</b></h1>
                 <ul class="ingredients-list">
-                    <li>2 <span class="ingredient-qte">eggs</span></li>
-                    <li>1/2 <span class="ingredient-qte">cup flour</span></li>
-                    <li>1/2  <span class="ingredient-qte">cup milk</span></li>
-                    <li>2 <span class="ingredient-qte">tablespone butter</span></li>
+                    <li>2 <span class="ingredient-qte">lorem ipsum</span></li>
+                    <li>1/2 <span class="ingredient-qte">sit amet</span></li>
+                    <li>1/2  <span class="ingredient-qte">adipiscing elit</span></li>
+                    <li>2 <span class="ingredient-qte">Excepteur sint</span></li>
 
                 </ul>
             </div>

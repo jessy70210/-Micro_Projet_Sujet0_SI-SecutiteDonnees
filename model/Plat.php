@@ -165,7 +165,7 @@ class Plat
         $main1->setId(1);
         $main1->setPricePlat(20);
         $main1->setImagePlat('../../resources/assets/img/2.jpg');
-        $main1->setLibelleplat('Crepes with Oranges and Honey');
+        $main1->setLibelleplat('ribs');
         $main1->setDetailsPlat('20min');
         $main1->setQtePlat(0);
         $main1->setIngredients('aaaa');
@@ -251,6 +251,16 @@ class Plat
         $main8->setIngredients('aaaa');
         $main8->setTypePlat('dessert');
 
+        $main9 = new Plat();
+        $main9->setId(10);
+        $main9->setPricePlat(10);
+        $main9->setImagePlat('../../resources/assets/img/drink1.jpeg');
+        $main9->setLibelleplat('Cottage cheese with couli');
+        $main9->setDetailsPlat('5min');
+        $main9->setQtePlat(0);
+        $main9->setIngredients('aaaa');
+        $main9->setTypePlat('drink');
+
         $myArray = array();
         array_push($myArray,$main1);
         array_push($myArray,$main2);
@@ -262,6 +272,7 @@ class Plat
         array_push($myArray, $main6);
         array_push($myArray, $main7);
         array_push($myArray, $main8);
+        array_push($myArray, $main9);
 
         return $myArray;
     }
@@ -277,6 +288,19 @@ class Plat
         foreach ($plats as $plat):
             if($plat->getTypePlat() == $type){
                 array_push($myArray,$plat);
+            }
+        endforeach;
+        return $myArray;
+    }
+    public function getPlatByName($name,$plats){
+        error_log('existe:ok');
+        $myArray = array();
+        foreach ($plats as $plat):
+            if(str_contains($plat->getLibelleplat(),$name)){
+                error_log('existe:oui');
+                array_push($myArray,$plat);
+            }else{
+                error_log('existe:non');
             }
         endforeach;
         return $myArray;

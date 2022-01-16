@@ -415,7 +415,7 @@
 </ul>
 
 <div class="checkout">
-    <button type="button" class="btn btn-rounded">Checkout</button>
+    <button type="button" class="btn btn-rounded"><a href="?controller=Payement">Checkout</a></button>
 </div>
 
 </body>

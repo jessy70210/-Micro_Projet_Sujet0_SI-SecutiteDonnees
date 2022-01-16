@@ -488,6 +488,7 @@
         background-color:white;
         border: 0px solid rgba(0,0,0,0);
         box-shadow: 5px 5px 5px  darkgray;
+        text-align: center;
 
     }
     .plat:hover{
@@ -535,9 +536,17 @@
 
 
 <div id="cover">
+    <form method="get" action="">
         <div class="tb">
-            <div class="td"><input type="text" placeholder="Search" oninput="w3.filterHTML('#listPlats', '.plat', this.value)"></div>
+            <div class="td"><input type="text" placeholder="Search" required></div>
+            <div class="td" id="s-cover">
+                <button type="submit">
+                    <div id="s-circle"></div>
+                    <span></span>
+                </button>
+            </div>
         </div>
+    </form>
 </div>
 
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
@@ -577,7 +586,7 @@
 </div>
 
 
-<ul class="cards" id="listPlats">
+<ul class="cards">
     <?php
     foreach ($platsFiltres as $plat):
         echo '
@@ -587,8 +596,8 @@
                         <img src="'.$plat->getImagePlat().'" class="card__image" alt=""  />
                     </a>
                 </li>
-                <h2 style="text-align: center;color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold " >Poitrine de poulet grillée</h2>
-                <h1 style="text-align: center;"><span style="font-weight:bold;font-size:45px;font-family:Comic Sans MS, Comic Sans, cursive">852 </span><span style="font-size:35px ; color:rgba(232,88,82,100)">$ </span></h1>
+                <h2 style="text-align: center;color:#444444; font-family:Comic Sans MS , Comic Sans, cursive; font-weight:bold " >'.$plat->getLibelleplat().'</h2>
+                <h1 style="text-align: center;"><span style="font-weight:bold;font-size:45px;font-family:Comic Sans MS, Comic Sans, cursive">'.$plat->getPricePlat().' </span><span style="font-size:35px ; color:rgba(232,88,82,100)">$ </span></h1>
                 <h1 style="text-align: center;color:#999999"><span> <img src="../../resources/assets/img/time.png" style="width:10%;height:10%;"  /></span><span style="font-weight:bold;font-size:20px;padding-top:10%"> 30 min </span></h1>
         
             </div>';
@@ -722,6 +731,6 @@
     }
 </script>
 </body>
-<script src="https://www.w3schools.com/lib/w3.js"></script>
+
 </html>
 
